@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Free God Emulator</title>
+    <style>
+      button{
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      
+      .item1 { grid-area: header; }
+      
+      .item2 { grid-area: menu; 
+      background-image: url(god2.jpeg);
+      background-repeat: no-repeat;
+      min-height: 600px;
+      }
+
+      .item3 { grid-area: main;
+      font-size: 20px; }
+
+      .item4 { grid-area: right; }
+
+      .item5 { grid-area: footer; }
+
+      .grid-container {
+        border: 5px outset red;
+        display:grid;
+        grid-template-areas:
+          'header header header header header header'
+          'menu menu main main right right'
+          'menu menu footer footer footer footer';
+        grid-gap: 10px;
+          background-color: #6b5b95;
+        padding: 10px;
+      }
+
+      .grid-container > div {
+        border: 5px outset red;
+        background-color:#d6cbd3 ;
+        max-block-size: initial;
+        text-align:initial;
+        padding: 20px 0;
+        font-size: 25px;
+        
+      }
+      
+     </style>
+
+  </head>
+  <body>
+
+    <div class="grid-container">
+
+
+      <button id="btn"  >
+        DAle don
+      </button>
+
+      <div id="header" class="item1">
+        Header
+      </div>
+
+      <div id="divimage" class="item2">
+        God Image
+      </div>  
+
+      <div id="theboyz" class="item3">
+        Names
+      </div>
+
+      <div id= "others" class= "item4">
+        Other info  
+      </div>
+      <div id="footer" class="item5">
+        Footer
+      </div>
+      
+
+    </div>
+   
+
+<!-- // Evento onload que llama una ventana al "iniciar la pagina"
+    <body onload="window.alert('Bienvenido a mi página!');"> -->
+    <script src="dinamic.js" charset="utf-8">
+    </script>
+
+  </body>
+</html>
